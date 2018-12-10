@@ -56,14 +56,18 @@ footer a {
 button {
 	width: 100px;
 	height: 35px;
-	background: rgb(99, 99, 224);
+	background: linear-gradient(
+		rgb(99, 99, 224),
+		rgb(85, 85, 235),
+		rgb(99, 99, 224)
+	);
 	color: white;
 	border: none;
 	font-size: 18px;
 	cursor: pointer;
 	border-radius: 5px;
-	box-shadow: 0px 4px 0px rgb(24, 24, 129);
 	outline: none;
+	box-shadow: 0px 4px 0px rgb(24, 24, 129);
 }
 
 .login-container > div > div {
@@ -81,6 +85,7 @@ input {
 	height: 35px;
 	font-size: 18px;
 	border: solid 3px rgb(68, 68, 195);
+	outline: none;
 	border-radius: 5px;
 	background: rgb(207, 207, 207);
 }
