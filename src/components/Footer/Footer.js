@@ -11,7 +11,7 @@ export default class Footer extends Component {
 						<a href="#">Contact</a>
 						<a href="#">Complain</a>
 					</ul>
-					<Promos />
+					<Promos user={this.props.user} />
 				</div>
 			</footer>
 		);

@@ -7,7 +7,7 @@ export default class Header extends Component {
 			<header>
 				<div className="d-c">
 					<div className="logo">Random Logo</div>
-					<UserSection />
+					<UserSection user={this.props.user} />
 				</div>
 			</header>
 		);

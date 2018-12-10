@@ -5,7 +5,8 @@ export default class Apply extends Component {
 	render() {
 		return (
 			<div>
-				<UserName />
+				{this.props.user ? "Special Savings Promo for: " : null}
+				<UserName user={this.props.user} />
 			</div>
 		);
 	}

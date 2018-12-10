@@ -9,7 +9,7 @@ export default class Content extends Component {
 					{this.props.user ? (
 						`${this.props.user} is super cool`
 					) : (
-						<Login />
+						<Login login={this.props.login} />
 					)}
 				</div>
 			</div>
