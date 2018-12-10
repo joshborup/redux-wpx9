@@ -1,16 +1,19 @@
 import React, { Component } from "react";
+import { loginUser } from "../../ducks/reducer";
+import { connect } from "react-redux";
 import Login from "./Login";
 
-export default class Content extends Component {
+class Content extends Component {
 	render() {
+		const { user, loginUser } = this.props;
 		return (
 			<div className="content">
 				<div className="d-c">
 					<div className="login-container">
-						{this.props.user ? (
-							`${this.props.user} is super cool`
+						{user ? (
+							`${user} is super cool`
 						) : (
-							<Login />
+							<Login login={loginUser} />
 						)}
 					</div>
 				</div>
@@ -18,3 +21,18 @@ export default class Content extends Component {
 		);
 	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+		user: state.user
+	};
+};
+
+const mapDispatchToProps = {
+	loginUser: loginUser
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(Content);
