@@ -56,9 +56,10 @@ footer a {
 button {
 	width: 100px;
 	height: 35px;
-	background: blue;
+	background: rgb(68, 68, 195);
 	color: white;
 	border: none;
+	font-size: 18px;
 }
 
 input {
