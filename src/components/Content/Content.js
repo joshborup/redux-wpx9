@@ -6,11 +6,13 @@ export default class Content extends Component {
 		return (
 			<div className="content">
 				<div className="d-c">
-					{this.props.user ? (
-						`${this.props.user} is super cool`
-					) : (
-						<Login />
-					)}
+					<div className="login-container">
+						{this.props.user ? (
+							`${this.props.user} is super cool`
+						) : (
+							<Login />
+						)}
+					</div>
 				</div>
 			</div>
 		);
