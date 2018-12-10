@@ -10,14 +10,16 @@ class Content extends Component {
 		return (
 			<div className="content">
 				<div className="d-c">
-					{user ? (
-						<div>
-							{`${user} is super cool`}
-							<UpdateName />
-						</div>
-					) : (
-						<Login login={loginUser} />
-					)}
+					<div className="login-container">
+						{user ? (
+							<div>
+								{`${user} is super cool`}
+								<UpdateName />
+							</div>
+						) : (
+							<Login login={loginUser} />
+						)}
+					</div>
 				</div>
 			</div>
 		);
