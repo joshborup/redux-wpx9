@@ -6,7 +6,7 @@ export default class Content extends Component {
 		return (
 			<div className="content">
 				<div className="d-c">
-					<div>
+					<div className="login-container">
 						{this.props.user ? (
 							`${this.props.user} is super cool`
 						) : (
